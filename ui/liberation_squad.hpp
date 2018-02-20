@@ -9,12 +9,6 @@ class liberation_squad {
 
 	objects[] = {};
 
-	class RecycleBG : BgPicture {
-		x = (0.2 * safezoneW + safezoneX) - (2 * BORDERSIZE);
-		y = (0.2 * safezoneH + safezoneY) - (3 * BORDERSIZE);
-		w = (0.6 * safezoneW) + (4 * BORDERSIZE);
-		h = (0.6 * safezoneH) + (6 * BORDERSIZE);
-	};
 	class DeployMap : kndr_MapControl {
 		idc = 100;
 		x = (0.32 * safezoneW + safezoneX)  + BORDERSIZE;
