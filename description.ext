@@ -1,0 +1,14 @@
+author = "[LEGION]SEU NOME"; // SEU NOME
+onLoadName = ""; // NOME DA MISSÃO
+onLoadMission = ""; // DESCRIÇÃO RÁPIDA DA MISSÃO
+joinUnassigned = 0;
+loadScreen = ""; //IMAGEM DE LOADING
+forceRotorLibSimulation = 1;
+class Header{
+	gameType = Coop;
+};
+
+//GREUH
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\mission_params.hpp"
+#include "ui\liberation_interface.hpp"
