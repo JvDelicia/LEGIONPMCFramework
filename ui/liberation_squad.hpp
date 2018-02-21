@@ -3,12 +3,20 @@ class liberation_squad {
 	movingEnable = false;
 	controlsBackground[] = {};
 
-	controls[] = {"OuterBG","OuterBG_F", "InnerBG", "InnerBG_F", "OuterCenterPanel","Header","SquadList", "ButtonClose",
+	controls[] = {"OuterBG", "OuterBG_F", "InnerBG", "InnerBG_F", "OuterCenterPanel", "Header", "SquadList", "DeployMap", "ButtonClose",
 		"NameLabel", "ClassLabel", "HealthLabel", "DistanceLabel", "PrimaryLabel", "PrimaryMagsLabel", "SecondaryLabel", "SecondaryMagsLabel", "VehicleLabel",
 		"ConfirmButton", "PiPZone"};
 
 	objects[] = {};
 
+	class DeployMap : kndr_MapControl {
+		idc = 100;
+		x = (0.32 * safezoneW + safezoneX)  + BORDERSIZE;
+		y = (0.6 * safezoneH + safezoneY);
+		w = (0.12 * safezoneW);
+		h = (0.2 * safezoneH);
+	};
+	
 	class OuterBG : StdBG{
 		colorBackground[] = COLOR_BROWN;
 		x = (0.2 * safezoneW + safezoneX) - (2 * BORDERSIZE);
